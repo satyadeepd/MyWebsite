@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Pecita';
+    src: url('../fonts/Pecita.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .menu li {
+    margin-right: 15px;
+  }
+  
+  /* Apply margin-right to all menu items except the last one */
+  .menu li:not(:last-child) {
+    margin-right: 30px; /* Adjust the spacing as needed */
+  }
+  /* Common styles for all screen sizes */
+  
+  .navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F5F1;
+    color: black;
+    padding: 10px 20px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f5f1; /* Set the background color for the entire page */
+  }   
+  
+  .left {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Pecita', sans-serif;
+  
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+    font-family: 'Pecita', sans-serif;
+    margin-right: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 15px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover {
+    color: #D36363;
+  }
+  
+  .center {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #D36363;
+    font-family: 'Pecita', sans-serif;
+  }
+  
+  .right {
+    display: flex;
+    align-items: center;
+    font-family: 'Pecita', sans-serif;
+    font-size: 1.5rem;
+  
+}
+  
+  .cv-link {
+    text-decoration: none;
+    color: black;
+    background-color: #F6F5F1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+
+  .photo-container {
+    width: 300px;
+    /*Adjustthewidthasneeded*/margin: 75px auto;
+    margin-right: 700px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #F6F5F1;
+    border-radius: 90px 0 90px 0;
+    /*top-leftandbottom-rightradii*/text-align: center;
+    /*Centertheimagehorizontally*/position: relative;
+    /*Forcentering*/;
+    -webkit-border-radius: 90px 0 90px 0;
+    -moz-border-radius: 90px 0 90px 0;
+    -ms-border-radius: 90px 0 90px 0;
+    -o-border-radius: 90px 0 90px 0;
+  }
+  
+  .photo-container img {
+    width: 100%;
+    /*Makesuretheimagefillsthecontainer*/border-radius: 90px 0 90px 0;
+     /* Apply the same radii to the image */;
+    -webkit-border-radius: 90px 0 90px 0;
+    -moz-border-radius: 90px 0 90px 0;
+    -ms-border-radius: 90px 0 90px 0;
+    -o-border-radius: 90px 0 90px 0;
+  }
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust the spacing as needed */
+  }
+  .text-container {
+    margin-left: 250px;
+    margin-bottom: 150px; /* Adjust the spacing between the text and photo */
+  }
+  .photo-text {
+    font-size: 50px;
+    font-family: 'Pecita', sans-serif;
+  }
+  
+  .right-text-container {
+    position: absolute;
+    top: 180px; /* Adjust the vertical positioning */
+    right: 120px; /* Adjust the horizontal positioning */
+    text-align: center;
+    width: 30%;
+  }
+  .right-text {
+    font-size: 30px;
+    font-family: 'Pecita', sans-serif;
+    text-align: justify;
+  }
+  .highlight {
+    color: #D36363; /* Set the desired color for highlighted words */
+  }
+  .logo-text {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .logo-text::before {
+    content: '';
+    position: absolute;
+    width: 175px; /* Adjust the size of the logo */
+    height: 180px; /* Adjust the size of the logo */
+    background-image: url('../assets/Ellipse.png'); /* Add the path to your logo image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -10px; /* Adjust the vertical positioning */
+    left: -10px; /* Adjust the horizontal positioning */
+  }
+  .arrow-logo {
+    display: block;
+    width: 230px; /* Adjust the size of the arrow logo */
+    height: 230px; /* Adjust the size of the arrow logo */
+    background-image: url('../assets/Arrow.png'); /* Use the correct path to your arrow image */
+    background-size: contain; /* Use contain to ensure the entire image fits */
+    background-repeat: no-repeat; /* Prevent repeating of the image */
+    margin-top: 5px; /* Adjust the spacing between arrow and logo text */
+    margin-left:180px;
+  }
+  .next-container img {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* This will maintain the aspect ratio */
+    margin-top: 90px;
+  }
+  .more-text {
+    font-size: 25px;
+    font-family: 'Pecita', sans-serif;
+    margin-top: 15px;
+  }
+  .bottom-text {
+    position: absolute;
+    
+    left: 0;
+    width: 40%;
+    background-color: #F6F5F1;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Pecita', sans-serif;
+    font-size: 30px;
+    margin-left:480px;
+    margin-bottom: 20px;
+  }
+  .smiley-logo {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Let the height adjust proportionally */
+    margin-left: 5px; /* Adjust the spacing as needed */
+    vertical-align: middle; /* Align the logo vertically with text */
+    margin-bottom: 10px;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F6F5F1;
+    padding: 10px 20px;
+    margin-top: 35px;
+  }
+  
+  .mail-text {
+    font-size: 23px;
+    font-family: 'Pecita', sans-serif;
+    text-decoration: underline 1.5px;
+  }
+  
+  .right-icons-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .insta-logo img {
+    width: 40px; /* Adjust the width of the logos */
+    height: auto;
+    margin-left: 10px; /* Adjust the spacing between the logos */
+  }
+  .linkedin-logo img {
+    width: 40px; /* Adjust the width of the logos */
+    height: auto;
+    margin-left: 10px; /* Adjust the spacing between the logos */
+  }
+  .no-underline {
+    text-decoration: none;
+  }
+  .link-text {
+    color: #333; /* Change to your desired text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Apply hover effect on link */
+  .link-text:hover {
+    color: #D36363; /* Change to your desired hover color */
+  }
+  .page {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+}
+
+.page.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+  
+  @media (max-width: 768px) {
+    .left {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .center {
+      display: none;
+    }
+  
+    .right {
+      margin-left: auto;
+    }
+  }
+  
